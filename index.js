@@ -53,7 +53,13 @@ client.on("messageCreate", (message) => {
 })
 
 client.on("messageCreate", (message) => {
-    if(message.content.includes("dont")){
+    if(message.content.includes("Keep your voice down!")){
+        message.reply("Shut the actual fuck up")
+    }
+    else if(message.content.includes("I'm Dad!")){
+        message.reply("Go die in a ditch")
+    }
+    else if(message.content.includes("dont")){
         message.reply("don't")
     }
     else if(message.content.includes("arent")){
@@ -86,10 +92,10 @@ client.on("messageCreate", (message) => {
     else if(message.content.includes("hes")){
         message.reply("he's")
     }
-    else if(message.content.includes("id")){
+    else if(message.content.includes("id ") && message.content.includes("did") == false){
         message.reply("I'd")
     }
-    else if(message.content.includes("ill")){
+    else if(message.content.includes("ill ")){
         message.reply("I'll")
     }
     else if(message.content.includes("ive")){
@@ -185,10 +191,10 @@ client.on("messageCreate", (message) => {
     else if(message.content.includes("youve")){
         message.reply("you've")
     }
-    else if(message.content.includes("its")){
+    else if(message.content.includes("its ")){
         message.reply("it's")
     }
-    else if(message.content.includes("im")){
+    else if(message.content.includes("im ")){
         message.reply("I'm")
     }
     else if(message.content.includes("there")){
