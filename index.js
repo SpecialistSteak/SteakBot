@@ -35,8 +35,14 @@ client.on("messageCreate", (message) => {
 })
 
 client.on("messageCreate", (message) => {
+    if (message.content == "$STEAK"){
+        message.reply(':cut_of_meat: :cut_of_meat: :cut_of_meat: :cut_of_meat: :cut_of_meat: :cut_of_meat: :cut_of_meat: :cut_of_meat: :cut_of_meat: ')
+    }
+})
+
+client.on("messageCreate", (message) => {
     if (message.content == "$help"){
-        message.reply('$howgay, hi, $help, $ping')
+        message.reply('$howgay, $help, $ping, $STEAK')
     }
 })
 
@@ -44,6 +50,34 @@ client.on("messageCreate", (message) => {
     if (message.content == "$howgay"){
         message.reply("You are 100% gay")
     }
+})
+
+client.on("messageCreate", (message) => {
+    if(message.content.includes("dont")){
+        message.reply("don't")
+    }
+    else if(message.content.includes("dont")){
+        message.reply("don't")
+    }
+    else if(message.content.includes("its")){
+        message.reply("it's")
+    }
+    else if(message.content.includes("im")){
+        message.reply("I'm")
+    }
+    else if(message.content.includes("there")){
+        message.reply("their")
+    }
+    else if(message.content.includes("their")){
+        message.reply("they're")
+    }
+    else if(message.content.includes("theyre")){
+        message.reply("there")
+    }
+    else if(message.content.includes("theyre")){
+        message.reply("they're")
+    }
+    else{}
 })
 
 client.on("messageCreate", (message) => {
