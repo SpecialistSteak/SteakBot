@@ -10,15 +10,47 @@ const client = new Discord.Client({
         "GUILD_MEMBERS"
     ]
 })
-
+//say $speakitalian and have them send some italicized text with a copypasta
 client.on("ready", () => {
     console.log(`Logged in as ${client.user.tag}`)
 })
 
 client.on("messageCreate", (message) => {
-    if (message.content == "hi"){
-        message.reply("Hello world")
+    if (message.content.toLowerCase() == "hi"){
+        message.reply("HELLO")
     }
+    else if (message.content.toLowerCase() == "wassup"){
+        message.reply("HELLO")
+    }
+    else if (message.content.toLowerCase() == "yo"){
+        message.reply("HELLO")
+    }
+    else if (message.content.toLowerCase() == "hey"){
+        message.reply("HELLO")
+    }
+    else if (message.content.toLowerCase() == "kms"){
+        message.reply("HELLO")
+    }
+    else{}
+})
+
+client.on("messageCreate", (message) => {
+    if (message.content == "$help"){
+        message.reply('$howgay, hi, $help, $ping')
+    }
+})
+
+client.on("messageCreate", (message) => {
+    if (message.content == "$howgay"){
+        message.reply("You are 100% gay")
+    }
+})
+
+client.on("messageCreate", (message) => {
+    if(message.content == "$ping"){
+        const timeTaken = Math.abs(Date.now() - message.createdTimestamp);
+        message.reply(`Pong! This message had a latency of ${timeTaken}ms.`);
+      }
 })
 
 const welcomeChannelId = "979058758577713212"
